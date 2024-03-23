@@ -1,0 +1,21 @@
+import axios from 'axios'
+import { CODE_SNIPPETS, LANGUAGE_VERSIONS } from './constants';
+
+const API = axios.create({ 
+    baseURL: 'https://emkc.org/api/v2/piston' 
+});
+
+
+export const executeCode = async (sourceCode, language) => {
+  
+const response = await API.post('/execute', {
+    language,
+    version : LANGUAGE_VERSIONS[language],
+    source: sourceCode,
+    files :[ {
+        "content" : sourceCode
+    }]
+  })
+  
+  return response.data;
+}

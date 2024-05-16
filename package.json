@@ -2,14 +2,15 @@
   "dependencies": {
     "@monaco-editor/react": "^4.6.0",
     "axios": "^1.6.8",
-    "concurrently": "^8.2.2"
+    "concurrently": "^8.2.2",
+    "vite": "^5.2.11"
   },
   "name": "codeeditor",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start" : "cd server && npm run dev",
+    "start": "cd server && npm run dev",
     "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build",
     "dev": "concurrently \"cd client && npm run dev\" \"cd server && npm run dev\""
   },

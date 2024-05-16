@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.div-1{
+    border: 2px solid red;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+th, td{
+    padding: 0.5rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border: 2px solid black;
+}
+
+tbody tr:hover {
+  background-color: #818181; /* Change to desired hover background color */
+  cursor: pointer;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+
+}
+
+.box{
+    background-color: #fff;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    flex : 1; 
+    /* height: 80vh; */
+
+
+}
+.box2{
+  background-color: #fff;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  flex : 2; 
+  /* height: 80vh; */
+
+
+}
+
+.box>div{
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40vh;
+}
+
+.editor{
+  height: 100vh  ;
+}
+
+.button-div>button{
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+

@@ -1,0 +1,67 @@
+.code-container{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.code-editor{
+    flex: 1;
+    width: 50%;
+    margin: 10px;
+}
+
+.code-output {
+    flex: 1;
+    height: auto; /* Change height to auto to allow content to expand */
+    background-color: red;
+    border: 2px solid black;
+    color: white;
+    margin-top: 25px;
+    width: 50%;
+    overflow-y: auto; /* Add overflow-y to enable vertical scrolling */
+    padding: 10px; /* Add padding for better spacing */
+}
+
+.result {
+    margin-top: 10px;
+    padding: 10px;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    min-height: 0; /* Allow the container to shrink */
+    overflow-y: auto; /* Add overflow-y to enable vertical scrolling */
+    max-height: 50vh; /* Limit maximum height to 50vh */
+}
+
+
+.output-btn{
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.output-btn>button{
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+}
+
+.output-btn>button:hover{
+    background-color: black;
+    color: white;
+}

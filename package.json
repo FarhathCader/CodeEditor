@@ -2,8 +2,7 @@
   "dependencies": {
     "@monaco-editor/react": "^4.6.0",
     "axios": "^1.6.8",
-    "concurrently": "^8.2.2",
-    "vite": "^5.2.11"
+    "concurrently": "^8.2.2"
   },
   "name": "codeeditor",
   "version": "1.0.0",
